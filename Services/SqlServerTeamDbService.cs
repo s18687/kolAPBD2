@@ -20,6 +20,7 @@ namespace kolAPBD2.Services
         
         public IEnumerable<Team> GetTeams(int IdTeam)
         {
+            //wyciagnac liste druzyn
             throw new NotImplementedException();
         }
 
@@ -39,8 +40,7 @@ namespace kolAPBD2.Services
             var today = DateTime.Today;
             var age = today - playerRequest.DateOfBirth;
 
-            
-
+            //sprawdzic czy nalezy do druzyny, jesli nie to dodac do kontekstu i zapisac zmiany
            
             context.SaveChanges();
 
